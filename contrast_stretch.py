@@ -39,7 +39,7 @@ if __name__ == "__main__":
     BASE_NAME = os.getenv("BASE_NAME")
     FILE_NAME = os.getenv("FILE_NAME")
     SOURCE_DIR = f"{BASE_NAME}/{FILE_NAME}"
-    OUT_DIR = f"{BASE_NAME}/{FILE_NAME}_contrast-stretch2/"
+    OUT_DIR = f"{BASE_NAME}/{FILE_NAME}_contrast-stretch/"
     JOBLIB_N_JOBS = -1
 
     input_path_list = glob.glob(f"{SOURCE_DIR}/*.png")
