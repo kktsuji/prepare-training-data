@@ -37,9 +37,10 @@ def _helper(input_path, output_dir):
 if __name__ == "__main__":
     dotenv.load_dotenv()
     BASE_NAME = os.getenv("BASE_NAME")
+    FILE_NAME_BASE = os.getenv("FILE_NAME_BASE")
     FILE_NAME = os.getenv("FILE_NAME")
-    SOURCE_DIR = f"{BASE_NAME}/{FILE_NAME}"
-    OUT_DIR = f"{BASE_NAME}/{FILE_NAME}_contrast-stretch/"
+    SOURCE_DIR = f"{BASE_NAME}/{FILE_NAME_BASE}"
+    OUT_DIR = f"{BASE_NAME}/{FILE_NAME}/"
     JOBLIB_N_JOBS = -1
 
     input_path_list = glob.glob(f"{SOURCE_DIR}/*.png")
